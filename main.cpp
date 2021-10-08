@@ -7,19 +7,19 @@ int main()
 
 	Circle c1 = Circle();
 	cout << c1.to_string();
-	cout << "Ïåðèìåòð: " << c1.get_perimeter() << endl;
-	cout << "Ïëîùàäü: " << c1.get_square() << endl;
+	cout << "ÐŸÐµÑ€Ð¸Ð¼ÐµÑ‚Ñ€: " << c1.get_perimeter() << endl;
+	cout << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ: " << c1.get_square() << endl;
 	c1.move(-2, 4);
-	cout << "Ïîñëå ïåðåìåùåíèÿ îêðóæíîñòè íà -2 ïî OX è +4 ïî OY: " << endl;
+	cout << "ÐŸÐ¾ÑÐ»Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÑ‰ÐµÐ½Ð¸Ñ Ð¾ÐºÑ€ÑƒÐ¶Ð½Ð¾ÑÑ‚Ð¸ Ð½Ð° -2 Ð¿Ð¾ OX Ð¸ +4 Ð¿Ð¾ OY: " << endl;
 	cout << c1.to_string() << endl;
 
 	Cylinder c2 = Cylinder(2, 3, 5, 7);
 	cout << c2.to_string();
-	cout << "Ïåðèìåòð îêðóæíîñòè: " << c2.get_perimeter() << endl;
-	cout << "Ïëîùàäü ïîëíîé ïîâåðõíîñòè öèëèíäðà: " << c2.get_square() << endl;
-	cout << "Îáúåì öèëèíäðà: " << c2.get_volume() << endl;
+	cout << "ÐŸÐµÑ€Ð¸Ð¼ÐµÑ‚Ñ€ Ð¾ÐºÑ€ÑƒÐ¶Ð½Ð¾ÑÑ‚Ð¸: " << c2.get_perimeter() << endl;
+	cout << "ÐŸÐ»Ð¾Ñ‰Ð°Ð´ÑŒ Ð¿Ð¾Ð»Ð½Ð¾Ð¹ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸ Ñ†Ð¸Ð»Ð¸Ð½Ð´Ñ€Ð°: " << c2.get_square() << endl;
+	cout << "ÐžÐ±ÑŠÐµÐ¼ Ñ†Ð¸Ð»Ð¸Ð½Ð´Ñ€Ð°: " << c2.get_volume() << endl;
 	c2.move(3, -4);
-	cout << "Ïîñëå ïåðåìåùåíèÿ îêðóæíîñòè íà +3 ïî OX è -4 ïî OY: " << endl;
+	cout << "ÐŸÐ¾ÑÐ»Ðµ Ð¿ÐµÑ€ÐµÐ¼ÐµÑ‰ÐµÐ½Ð¸Ñ Ð¾ÐºÑ€ÑƒÐ¶Ð½Ð¾ÑÑ‚Ð¸ Ð½Ð° +3 Ð¿Ð¾ OX Ð¸ -4 Ð¿Ð¾ OY: " << endl;
 	cout << c2.to_string() << endl;
 
 	system("pause");
