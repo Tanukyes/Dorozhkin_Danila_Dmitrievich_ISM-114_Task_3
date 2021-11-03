@@ -26,8 +26,8 @@ double Cylinder::get_square()
 string Cylinder::to_string()
 {
 	stringstream ss;
-	ss << "Öèëèíäğ ñ öåíòğîì â òî÷êå (" << x << ", " << y <<
-		") è ğàäèóñîì " << radius << "; âûñîòà: " << height << "\n";
+	ss << "Ğ¦Ğ¸Ğ»Ğ¸Ğ½Ğ´Ñ€ Ñ Ñ†ĞµĞ½Ñ‚Ñ€Ğ¾Ğ¼ Ğ² Ñ‚Ğ¾Ñ‡ĞºĞµ (" << x << ", " << y <<
+		") Ğ¸ Ñ€Ğ°Ğ´Ğ¸ÑƒÑĞ¾Ğ¼ " << radius << "; Ğ²Ñ‹ÑĞ¾Ñ‚Ğ°: " << height << "\n";
 	return ss.str();
 }
 
