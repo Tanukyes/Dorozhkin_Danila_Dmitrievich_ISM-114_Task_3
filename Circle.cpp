@@ -33,7 +33,7 @@ void Circle::move(double dx, double dy)
 string Circle::to_string()
 {
 	stringstream ss;
-	ss << "Îêðóæíîñòü ñ öåíòðîì â òî÷êå (" <<
-		x << ", " << y << ") è ðàäèóñîì " << radius << "\n";
+	ss << "ÐžÐºÑ€ÑƒÐ¶Ð½Ð¾ÑÑ‚ÑŒ Ñ Ñ†ÐµÐ½Ñ‚Ñ€Ð¾Ð¼ Ð² Ñ‚Ð¾Ñ‡ÐºÐµ (" <<
+		x << ", " << y << ") Ð¸ Ñ€Ð°Ð´Ð¸ÑƒÑÐ¾Ð¼ " << radius << "\n";
 	return ss.str();
 }
