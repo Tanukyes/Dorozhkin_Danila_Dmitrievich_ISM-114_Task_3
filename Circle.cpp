@@ -2,38 +2,51 @@
 
 Circle::Circle()
 {
-	x = 0;
-	y = 0;
-	radius = 1;
+    x = 0;
+    y = 0;
+    radius = 1;
 }
 
-Circle::Circle(double _x, double _y, double _radius)
+Circle::Circle(const double _x, const double _y, const double _radius)
 {
-	x = _x;
-	y = _y;
-	radius = _radius;
+    x = _x;
+    y = _y;
+    radius = _radius;
 }
 
 double Circle::get_square()
 {
-	return M_PI * radius * radius;
+    return M_PI * radius * radius;
 }
 
 double Circle::get_perimeter()
 {
-	return 2 * M_PI * radius;
+    return 2 * M_PI * radius;
 }
 
-void Circle::move(double dx, double dy)
+void Circle::move(const double dx, const double dy)
 {
-	x += dx;
-	y += dy;
+    x += dx;
+    y += dy;
 }
 
 string Circle::to_string()
 {
-	stringstream ss;
-	ss << "Окружность с центром в точке (" <<
-		x << ", " << y << ") и радиусом " << radius << "\n";
-	return ss.str();
+    stringstream ss;
+    ss << "Окружность с центром в точке (" <<
+       x << ", " << y << ") и радиусом " << radius << "\n";
+    return ss.str();
+}
+
+void Circle::setRadius(const double radius){
+    if(radius > 0) {
+        this->radius = radius;
+    } else {
+        cout << "Invalid radius value\n";
+    }
+}
+
+Circle::~Circle()
+{
+
 }
